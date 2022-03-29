@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZATCA E-Invoice</title>
+</head>
+<body>
+
+<div class="body">
+    <h1>ZATCA E-Invoice QRCode Success!.</h1>
+
+    <div class="base64">
+        {% if fatoora_obj %}
+            <p>{{ fatoora_obj.base64 }}</p>
+            <p>{{ qr|safe}}</p>
+        {% endif %}
+    </div>
+
+</div>
+
+</body>
+</html>
